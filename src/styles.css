@@ -1,2 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --text-color: #03324c;
+  --pale-blue: #f2f8fc;
+  --orange: #ef6738;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.filter-form {
+  background-color: var(--pale-blue);
+}
+
+.delete-button:hover,
+.btn-submit:hover {
+  color: var(--orange);
+}
+
+.delete-button,
+.btn-submit {
+  font-family: "Font Awesome 5 Free";
+}
+
+.delete-button {
+  color: var(--text-color);
+  cursor: pointer;
+}

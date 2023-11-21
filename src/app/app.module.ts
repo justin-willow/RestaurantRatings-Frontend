@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
-import { RestaurantFavesService } from './services/restaurant-faves.service';
+import { AddOrderFormComponent } from './components/add-order-form/add-order-form.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrderHistoryComponent
+    OrderHistoryComponent,
+    AddOrderFormComponent
   ],
   imports: [
     BrowserModule,
