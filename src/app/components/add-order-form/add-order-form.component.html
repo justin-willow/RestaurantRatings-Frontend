@@ -1,4 +1,3 @@
-
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-6 text-center">
@@ -8,27 +7,56 @@
         <div class="form-group text-center">
           <label for="restaurant" class="col-form-label">Restaurant:</label>
           <div class="col-sm-6 mx-auto">
-            <input type="text" id="restaurant" class="form-control" [(ngModel)]="newOrder.restaurant" required>
+            <input
+              type="text"
+              id="restaurant"
+              class="form-control"
+              name="restaurant"
+              [(ngModel)]="newOrder.restaurant"
+              required
+            />
           </div>
         </div>
 
         <div class="form-group text-center">
           <label for="description" class="col-form-label">Description:</label>
           <div class="col-sm-6 mx-auto">
-            <input type="text" id="description" class="form-control" [(ngModel)]="newOrder.description" required>
+            <input
+              type="text"
+              id="description"
+              class="form-control"
+              name="description"
+              [(ngModel)]="newOrder.description"
+              required
+            />
           </div>
         </div>
 
         <div class="form-group text-center">
           <label for="rating" class="col-form-label">Rating (1-5):</label>
           <div class="col-sm-2 mx-auto">
-            <input type="number" id="rating" class="form-control" [(ngModel)]="newOrder.rating" min="1" max="5" required>
+            <input
+              type="number"
+              id="rating"
+              class="form-control"
+              name="rating"
+              [(ngModel)]="newOrder.rating"
+              min="1"
+              max="5"
+              required
+            />
           </div>
         </div>
 
         <div class="form-group text-center">
           <label class="form-check-label" for="orderAgain">Order Again:</label>
-          <input type="checkbox" id="orderAgain" class="form-check-input" [(ngModel)]="newOrder.orderAgain">
+          <input
+            type="checkbox"
+            id="orderAgain"
+            class="form-check-input"
+            name="orderAgain"
+            [(ngModel)]="newOrder.orderAgain"
+          />
         </div>
 
         <div class="form-group text-center">
