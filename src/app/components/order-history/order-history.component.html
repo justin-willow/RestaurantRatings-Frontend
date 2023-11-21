@@ -1,0 +1,27 @@
+
+    <h2>Order History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Description</th>
+          <th>Restaurant</th>
+          <th>Rating</th>
+          <th>Order Again</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{ order.id }}</td>
+          <td>{{ order.description }}</td>
+          <td>{{ order.restaurant }}</td>
+          <td>{{ order.rating }}</td>
+          <td *ngIf="order.orderAgain">&#10003;</td>
+          <td>
+            <button (click)="deleteOrder(order.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
