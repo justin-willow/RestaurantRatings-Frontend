@@ -18,10 +18,10 @@ export class AddOrderFormComponent {
     id: 0,
   };
 
-  constructor(private RestaurantFavesService: RestaurantFavesService) {}
+  constructor(private restaurantFavesService: RestaurantFavesService) {}
 
   submitOrder() {
-    this.RestaurantFavesService
+    this.restaurantFavesService
       .addOrder(this.newOrder)
       .subscribe((addedOrder: Order | undefined) => {
         this.orderSave.emit(addedOrder);
